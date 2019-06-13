@@ -1,4 +1,4 @@
-module github.com/bgpat/coredns-resolv-search
+module github.com/bgpat/coredns-fallback-local
 
 go 1.12
 
