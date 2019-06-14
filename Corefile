@@ -1,0 +1,5 @@
+.:53 {
+    log
+    proxy . /etc/resolv.conf
+    fallback_local
+}
