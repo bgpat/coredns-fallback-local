@@ -1,4 +1,4 @@
-FROM golang:1.12.6-stretch as build
+FROM golang:1.18.3-stretch as build
 RUN apt-get update && apt-get -uy upgrade
 RUN apt-get install ca-certificates && update-ca-certificates
 RUN git clone https://github.com/coredns/coredns --branch=v1.5.0 --depth=1 /go/src/github.com/coredns/coredns
