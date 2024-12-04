@@ -2,7 +2,7 @@ module github.com/bgpat/coredns-fallback-local
 
 go 1.22.7
 
-toolchain go1.23.3
+toolchain go1.23.4
 
 require (
 	github.com/coredns/coredns v1.12.0
