@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.24.3
 
 require (
-	github.com/coredns/caddy v1.1.2-0.20241029205200-8de985351a98
+	github.com/coredns/caddy/v2 v2.1.1
 	github.com/coredns/coredns v1.12.1
 	github.com/miekg/dns v1.1.65
 )
