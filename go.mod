@@ -2,7 +2,7 @@ module github.com/bgpat/coredns-fallback-local
 
 go 1.25.0
 
-toolchain go1.26.0
+toolchain go1.26.1
 
 require (
 	github.com/coredns/caddy v1.1.4
