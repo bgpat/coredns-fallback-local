@@ -6,5 +6,12 @@
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
+  ],
+  "packageRules": [
+    {
+      "description": "coredns/caddy v2 is not a drop-in for plugin API; wait for upstream coredns bump",
+      "matchPackageNames": ["github.com/coredns/caddy"],
+      "allowedVersions": "<2"
+    }
   ]
 }
