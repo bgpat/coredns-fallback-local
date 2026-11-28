@@ -9,11 +9,6 @@
   ],
   "packageRules": [
     {
-      "description": "coredns/caddy v2 is not a drop-in for plugin API; wait for upstream coredns bump",
-      "matchPackageNames": ["github.com/coredns/caddy"],
-      "allowedVersions": "<2"
-    },
-    {
       "description": "Go major updates: separate PR per dependency",
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["major"],
