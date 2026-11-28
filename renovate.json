@@ -1,17 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":separateMultipleMajorReleases",
+    ":separatePatchReleases"
   ],
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
   ],
-  "packageRules": [
-    {
-      "description": "coredns/caddy v2 is not a drop-in for plugin API; wait for upstream coredns bump",
-      "matchPackageNames": ["github.com/coredns/caddy"],
-      "allowedVersions": "<2"
-    }
-  ]
+  "automerge": true,
+  "platformAutomerge": true
 }
